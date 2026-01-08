@@ -32,7 +32,7 @@ export default function Home() {
           <div className="flex items-center gap-2 text-blue-600 dark:text-blue-500">
             <StickyNote className="h-8 w-8" />
             <h1 className="text-2xl font-black tracking-tight text-zinc-900 dark:text-white">
-              CloudNotes
+              OurNotes
             </h1>
           </div>
           <button
@@ -49,19 +49,13 @@ export default function Home() {
       {/* Main Content */}
       <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className="text-3xl font-bold text-zinc-900 dark:text-white">Your Notes</h2>
-          <p className="mt-1 text-zinc-500 dark:text-zinc-400">Capture your thoughts, ideas, and tasks.</p>
+          <h2 className="text-3xl font-bold text-zinc-900 dark:text-white">Our Notes</h2>
         </div>
 
         <NoteList onEdit={handleEdit} refreshTrigger={refreshTrigger} />
       </main>
 
-      {/* Footer */}
-      <footer className="mt-auto border-t border-zinc-200 py-8 dark:border-zinc-800">
-        <div className="mx-auto max-w-7xl px-4 text-center text-sm text-zinc-500 dark:text-zinc-600">
-          Built with Next.js & MongoDB
-        </div>
-      </footer>
+     
 
       {/* Note Form Modal */}
       {isFormOpen && (
